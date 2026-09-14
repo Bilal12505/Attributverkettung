@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="css/index.css" rel="stylesheet" type="text/css" />  
+    <script src="https://kit.fontawesome.com/d965fd55ae.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header-logo"><img class="logo-ht" src="./img/logoself.png"></div>
+            <div class="header-slogan">BIM-Service | Technisches Büro | HOCHTIEF Infrastructure Building</div>
+        </div>
+    </header><br>
+    <h2>Attribute verketten</h2><br><br>
+    <label>Trennzeichen: </label>
+    <select class="domain">
+        <option>geometry</option>
+        <option>activities</option>
+        <option>boq</option>
+    </select>
+    <div class="main">
+        <div class="main-attributes"><br><br></div>
+        <div class="main-buttons">
+            <div class="main-buttons-add">+</div>
+            <div class="main-buttons-remove">-</div>
+        </div>
+    </div><br><br>
+    <label>Trennzeichen: </label>
+    <select class="seperator">
+        <option>&</option>
+        <option>_</option>
+        <option>|</option>
+        <option>/</option>
+        <option>!</option>
+        <option>%</option>
+        <option>:</option>
+        <option>;</option>
+        <option>$</option>
+    </select><br>
+    <div class="execution">
+        <input class="attribute-name" placeholder="Bitte Attributnamen eintragen...">
+        <button class="button-execution">Attribute verketten</button>
+        <button class="button-execution">Attribute für selektierte Objekte verketten</button>
+    </div>
+    <div class="loader">
+        <img src="./img/logoBSSP.gif" class="logo-bs-loading">
+    </div>
+</body>
+<script type="module" src="./js/attributeChainingHandler.js"></script>
+</html>
